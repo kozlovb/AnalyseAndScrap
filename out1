@@ -1,0 +1,106 @@
+Uh oh, can't connect. Invalid dbname, user or password?
+duplicate key value violates unique constraint "pk_vitorbelfort"
+DETAIL:  Key ("time")=(1997-02-07) already exists.
+
+Uh oh, can't connect. Invalid dbname, user or password?
+duplicate key value violates unique constraint "pk_jerrybohlander"
+DETAIL:  Key ("time")=(1997-02-07) already exists.
+
+Uh oh, can't connect. Invalid dbname, user or password?
+duplicate key value violates unique constraint "pk_guymezger"
+DETAIL:  Key ("time")=(1997-05-30) already exists.
+
+Uh oh, can't connect. Invalid dbname, user or password?
+duplicate key value violates unique constraint "pk_randycouture"
+DETAIL:  Key ("time")=(1997-05-30) already exists.
+
+Uh oh, can't connect. Invalid dbname, user or password?
+duplicate key value violates unique constraint "pk_stevengraham"
+DETAIL:  Key ("time")=(1997-05-30) already exists.
+
+Uh oh, can't connect. Invalid dbname, user or password?
+duplicate key value violates unique constraint "pk_titoortiz"
+DETAIL:  Key ("time")=(1997-05-30) already exists.
+
+Uh oh, can't connect. Invalid dbname, user or password?
+duplicate key value violates unique constraint "pk_danbobish"
+DETAIL:  Key ("time")=(1997-07-27) already exists.
+
+Uh oh, can't connect. Invalid dbname, user or password?
+duplicate key value violates unique constraint "pk_markkerr"
+DETAIL:  Key ("time")=(1997-07-27) already exists.
+
+Uh oh, can't connect. Invalid dbname, user or password?
+duplicate key value violates unique constraint "pk_kevinjackson"
+DETAIL:  Key ("time")=(1997-07-27) already exists.
+
+Uh oh, can't connect. Invalid dbname, user or password?
+duplicate key value violates unique constraint "pk_tonyfryklund"
+DETAIL:  Key ("time")=(1997-07-27) already exists.
+
+Uh oh, can't connect. Invalid dbname, user or password?
+duplicate key value violates unique constraint "pk_markkerr"
+DETAIL:  Key ("time")=(1997-10-17) already exists.
+
+Uh oh, can't connect. Invalid dbname, user or password?
+duplicate key value violates unique constraint "pk_patmiletich"
+DETAIL:  Key ("time")=(1998-03-13) already exists.
+
+Uh oh, can't connect. Invalid dbname, user or password?
+duplicate key value violates unique constraint "pk_danhenderson"
+DETAIL:  Key ("time")=(1998-05-15) already exists.
+
+Uh oh, can't connect. Invalid dbname, user or password?
+duplicate key value violates unique constraint "pk_kenichiyamamoto"
+DETAIL:  Key ("time")=(1999-11-19) already exists.
+
+Unkwnown win method DQ
+Unkwnown win method Overturned
+Unkwnown win method DQ
+Unkwnown win method Overturned
+Unkwnown win method DQ
+Unkwnown win method DQ
+Unkwnown win method Overturned
+Unkwnown win method DQ
+Unkwnown win method DQ
+Unkwnown win method Overturned
+Unkwnown win method Overturned
+Unkwnown win method Overturned
+Unkwnown win method DQ
+Unkwnown win method Overturned
+Unkwnown win method Overturned
+Unkwnown win method Overturned
+Unkwnown win method Overturned
+Unkwnown win method DQ
+Unkwnown win method Overturned
+Unkwnown win method Overturned
+Unkwnown win method Overturned
+Unkwnown win method Overturned
+Unkwnown win method Overturned
+Unkwnown win method Overturned
+Unkwnown win method DQ
+Unkwnown win method Overturned
+Unkwnown win method DQ
+Unkwnown win method Overturned
+Unkwnown win method Overturned
+Unkwnown win method Overturned
+Unkwnown win method Overturned
+Unkwnown win method Overturned
+Unkwnown win method Overturned
+Unkwnown win method Overturned
+Unkwnown win method Overturned
+Unkwnown win method Overturned
+Unkwnown win method Overturned
+Unkwnown win method DQ
+Unkwnown win method DQ
+Uh oh, can't connect. Invalid dbname, user or password?
+duplicate key value violates unique constraint "pk_donghyunkim"
+DETAIL:  Key ("time")=(2015-11-28) already exists.
+
+Unkwnown win method Overturned
+points  1  total  15  K1  80  K2  80 rank1 2737 rank2 2737  diffInR  0 Pelo 0.5 result1 0.5333333333333333 res2 0.4666666666666667 method M-DEC RoundEnd 5 scoreDiff 1 true or notMdec True
+Unkwnown win method Overturned
+Uh oh, can't connect. Invalid dbname, user or password?
+duplicate key value violates unique constraint "pk_gianvillante"
+DETAIL:  Key ("time")=(2016-12-09) already exists.
+

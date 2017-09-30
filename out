@@ -1,0 +1,11 @@
+(datetime.date(2015, 12, 12), 'LasVegas,Nevada,USA', 16516, 'win', 'KO/TKO', 'ConorMcGregor', 'JoseAldo', 5, 1, 0, 0, 0, 0, 0, 0, 'Featherweight', 1, 13, 1, 0, 0, 0, 2, 0, 1)
+weight cat Featherweight result check  True
+here is the fight to analyse (datetime.date(2015, 12, 12), 'LasVegas,Nevada,USA', 16516, 'win', 'KO/TKO', 'ConorMcGregor', 'JoseAldo', 5, 1, 0, 0, 0, 0, 0, 0, 'Featherweight', 1, 13, 1, 0, 0, 0, 2, 0, 1)
+time 2015-12-12
+fighterName ConorMcGregor rows [(2568, 2647, 2791, 'Featherweight', 1000, datetime.date(2015, 7, 11)), (2585, 2624, 2755, 'Featherweight', 1000, datetime.date(2015, 1, 18)), (2585, 2609, 2730, 'Featherweight', 1000, datetime.date(2014, 9, 27)), (2585, 2587, 2689, 'Featherweight', 1000, datetime.date(2014, 7, 19))]
+time of rows [0] 2015-07-11
+time 2015-12-12
+fighterName JoseAldo rows [(2650, 2599, 2772, 'Featherweight', 800, datetime.date(2014, 10, 25)), (2622, 2595, 2754, 'Featherweight', 800, datetime.date(2014, 2, 1)), (2617, 2589, 2742, 'Featherweight', 1000, datetime.date(2013, 8, 3)), (2574, 2569, 2703, 'Featherweight', 733, datetime.date(2013, 2, 2))]
+time of rows [0] 2014-10-25
+rank 2568
+res {}
