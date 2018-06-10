@@ -7,7 +7,7 @@ try:
     # create a psycopg2 cursor that can execute queries
     cursor = conn.cursor()
     # create a new table with a single column called "name"
-    cursor.execute("SELECT * FROM fights WHERE FightTime BETWEEN " + "to_date('"+"20170101"+"','YYYYMMDD')" + " AND " + "to_date('"+"20170821"+"','YYYYMMDD')"+" ORDER BY FightTime ASC;")
+    cursor.execute("SELECT * FROM fights WHERE FightTime BETWEEN " + "to_date('"+"20170801"+"','YYYYMMDD')" + " AND " + "to_date('"+"20171031"+"','YYYYMMDD')"+" ORDER BY FightTime ASC;")
     rows = cursor.fetchall()
     print(rows)
     conn.close()

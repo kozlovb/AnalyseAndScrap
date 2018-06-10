@@ -11,7 +11,8 @@ try:
     # create a psycopg2 cursor that can execute queries
     cursor = conn.cursor()
     # create a new table with a single column called "name"
-    cursor.execute("""SELECT * FROM fighters ORDER BY fighterName ASC;""")
+    name = sys.argv[1:][0]
+    cursor.execute("SELECT * FROM fighters WHERE fighterName LIKE " + name + ";")
     rows = cursor.fetchall()
     #print(rows)
     conn.close()

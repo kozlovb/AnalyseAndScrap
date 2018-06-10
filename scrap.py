@@ -16,7 +16,7 @@ class Scraper(object):
         return res
     def getPages(self,addr,search_str):
         page = urllib.request.urlopen(addr)
-        soup = BeautifulSoup(page, "html5lib")
+        soup = BeautifulSoup(page, "html.parser")
         txt = soup.prettify()
         res =  []
         pos_link_to_fight = 0
@@ -61,7 +61,7 @@ class Scraper(object):
             raise
     def getFighterInt(self, addr):
         page = urllib.request.urlopen(addr)
-        soup = BeautifulSoup(page, "html5lib")
+        soup = BeautifulSoup(page, "html.parser")
         txt = soup.prettify()
         span = soup.findAll('span', {'class': 'b-content__title-highlight'})
         li = soup.findAll('li', {'class': 'b-list__box-list-item b-list__box-list-item_type_block'}) 
@@ -70,8 +70,11 @@ class Scraper(object):
         height = self.hlp(li[0].text, len('heightt'))
         reach = self.hlp(li[2].text, len('reachc'))
         stance = self.hlp(li[3].text, len('stancee'))
-        if stance != "Southpaw" or stance != 'Orthodox':
+        print("STANCE1", stance)
+        if stance != "Southpaw" and stance != 'Orthodox' and stance != 'Switch':
             stance = "Orthodox"
+        if stance == 'Switch':
+            stance = "Southpaw"
         dob = self.hlp(li[4].text, len('dobb'))
         if height == '--':
             height = "5'10'" 
@@ -80,12 +83,13 @@ class Scraper(object):
          
         month = month_converter(dob[:3])
         day = dob[3:dob.find(',')]
-        year = dob[dob.find(',')+1:]      
+        year = dob[dob.find(',')+1:]
+        print("STANCE2", stance)
         return (name, height, reach, stance, day, month, year)
 
     def getFightDetails(self, addr):
         page = urllib.request.urlopen(addr)
-        soup = BeautifulSoup(page, "html5lib")
+        soup = BeautifulSoup(page, "html.parser")
         text = soup.prettify()
         #totals_table
         section = soup.findAll('section', {'class': 'b-fight-details__section js-fight-section'})
@@ -136,7 +140,7 @@ class Scraper(object):
             raise    
     def getMainPageInt(self, addresse):
         page = urllib.request.urlopen(addresse)
-        soup = BeautifulSoup(page, "html5lib")
+        soup = BeautifulSoup(page, "html.parser")
         text = soup.get_text()
         text = str(text.encode('utf-8'))
         txt = soup.prettify()
@@ -176,7 +180,7 @@ class Scraper(object):
 
     def getLocDateAttend(self, addresse):
         page = urllib.request.urlopen(addresse)
-        soup = BeautifulSoup(page, "html5lib")
+        soup = BeautifulSoup(page, "html.parser")
         ul = soup.findAll('ul', {"class": "b-list__box-list"})
         li = ul[0].findAll("li")
         date = re.sub(r'\s',' ',li[0].text)
@@ -206,7 +210,7 @@ def getAllAddr():
     res = [] 
     start_page = "http://www.fightmetric.com/statistics/events/completed?page=all"
     page = urllib.request.urlopen(start_page)
-    soup = BeautifulSoup(page, "html5lib")
+    soup = BeautifulSoup(page, "html.parser")
     href_tags = soup.find_all(href=True)
     txt = soup.prettify()
     for a in soup.find_all('a', {"class": "b-link b-link_style_black"}, href=True):
@@ -257,6 +261,6 @@ if __name__ == "__main__":
     print (addrs[0:46])
     #print (addrs[380:386])
     #main runs scrap for last ? fights
-    number_fights_to_retrieve = 2
+    number_fights_to_retrieve = 425
     main(number_fights_to_retrieve)
 

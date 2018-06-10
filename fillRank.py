@@ -286,10 +286,10 @@ def fillRankRangeYears(start_y,end_y):
 
 #start from 01 01 1997 (otherwise there were crazy events with open weight)
 if __name__ == "__main__":
-    howManyCorrectPredict()
+    #howManyCorrectPredict()
     #print ("f select example", fightInfo[0])
 #calculate ranks for dates returns FightTime,WeightCategory,result,name1,name2,rankWrestle, rankStrike, Rankrank
-    #print ("rankings", calculateRanksForDates("20160305", "20160319")) 
+    print ("rankings", calculateRanksForDates("20170101", "20171231")) 
     #writeRanks(calculateRanksForDates("20160305", "20160319"))
 #FightTime 0,FightPlace 1,Attendance 2,result 3,method 4,FirstFighterName 5, SecondFighterName 6, StrikesFirstFighter 7, StrikesSecondFighter 8,TakedownsFirstFighter 9, TakedownsSecondFighter
 #10, SubAttFirstFighter 11, SubAttSecondFighter 12,PassGuardFirstFighter 13, PassGuardSecondFighter 14, WeightCategory 15, RoundEnd 16, TimeEnd 17, KDFirstFighter 18, KDSecondFighter 19, 
